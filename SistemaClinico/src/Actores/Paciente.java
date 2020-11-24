@@ -5,6 +5,8 @@
  */
 package Actores;
 
+import Clinica.Cita;
+import Clinica.HistoriaClinica;
 import java.util.Date;
 
 /**
@@ -13,6 +15,8 @@ import java.util.Date;
  */
 public class Paciente extends Persona{
     protected String email;
+    protected HistoriaClinica historiaClinica;
+    protected Cita cita;
     public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fechaNac);
     }
