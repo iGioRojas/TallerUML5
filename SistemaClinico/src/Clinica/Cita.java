@@ -14,7 +14,7 @@ import java.util.Date;
  * @author GeovannyRojas
  */
 public class Cita implements Pago {
-    protected Date fecha;
+    protected Date fecha;  //DateTime
     protected boolean pagada;
     protected String registradoPor;
     protected Doctor doc;
