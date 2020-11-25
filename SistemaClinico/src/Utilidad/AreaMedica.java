@@ -5,6 +5,8 @@
  */
 package Utilidad;
 
+import Actores.Doctor;
+
 import java.util.ArrayList;
 
 /**
@@ -15,6 +17,7 @@ public class AreaMedica {
     protected String especialidad;
     protected float costo;
     protected ArrayList<Medicamento> medicamentos = new ArrayList<>();
+    protected ArrayList<Doctor> doctores;
 
     public AreaMedica(String especialidad, float costo) {
         this.especialidad = especialidad;

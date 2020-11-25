@@ -5,6 +5,9 @@
  */
 package Actores;
 
+import Clinica.Cita;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -13,9 +16,11 @@ import java.util.Date;
  */
 public class Secretaria extends Persona {
     protected Doctor doc;
+    protected Cita citas;
 
-    public Secretaria(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac) {
+    public Secretaria(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac, Cita citas) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fechaNac);
+        this.citas = citas;
     }
     
     public boolean verificarCita()

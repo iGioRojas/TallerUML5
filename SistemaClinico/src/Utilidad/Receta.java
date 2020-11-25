@@ -5,6 +5,8 @@
  */
 package Utilidad;
 
+import Actores.Doctor;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -16,10 +18,11 @@ public class Receta {
     protected PlanNutricional planNut;
     protected Date fecha;  //DateTime
     protected ArrayList<Medicamento> medicamentos = new ArrayList<>();
-
-    public Receta(PlanNutricional planNut, Date fecha) {
+    protected Doctor doctor;
+    public Receta(PlanNutricional planNut, Date fecha, Doctor doctor) {
         this.planNut = planNut;
         this.fecha = fecha;
+        this.doctor=doctor;
     }
 
     public PlanNutricional getPlanNut() {

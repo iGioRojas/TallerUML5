@@ -6,6 +6,7 @@
 package Clinica;
 
 import Actores.Doctor;
+import Actores.Paciente;
 import Pago.Pago;
 import java.util.Date;
 
@@ -18,7 +19,20 @@ public class Cita implements Pago {
     protected boolean pagada;
     protected String registradoPor;
     protected Doctor doc;
-    
+    protected Paciente paciente;
+
+    public Cita(Date fecha, boolean pagada, String registradoPor, Doctor doc, Paciente paciente){
+        this.fecha=fecha;
+        this.pagada=pagada;
+        this.registradoPor=registradoPor;
+        this.doc=doc;
+        this.paciente=paciente;
+
+    }
+    public Paciente getPaciente(){
+        return this.paciente;
+
+    }
     @Override
     public boolean realizarPago(float monto) {
         return true;
